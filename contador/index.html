@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contador!</title>
+    <link rel="stylesheet" href="sytle.css">
+    <link href='https://fonts.googleapis.com/css?family=Bangers' rel='stylesheet'>
+</head>
+<body>
+    <h1 id=titulo>Eddie's Contador</h1>
+    <div id="quantidade">
+       <p id="a">0</p>
+    </div>
+    <div id="princp">
+        <div id="trofeuint">
+            <img src="images/trofeu.png" alt="Trofeu" id="trofeu1">
+            <img src="images/trofeu2.png" alt="Trofeu2" id="trofeu2">
+            <img src="images/trofeu3.png" alt="Trofeu2" id="trofeu3">
+            <img src="images/trofeu4.png" alt="Trofeu2" id="trofeu4">
+            
+        </div>
+        <button id="bt" onclick="anim()">Clique!</button>
+    </div>
+    <audio id="audio" src="images/achivement.mp3"></audio>
+    <script>
+        var musga = document.getElementById("audio")
+        var c = document.getElementById("a");
+        var trofeuum = document.getElementById("trofeu1");
+        var trofeudo = document.getElementById("trofeu2");
+        var trofeutre = document.getElementById("trofeu3");
+        var trofeuqua = document.getElementById("trofeu4");
+        var count = 0
+        function anim(){
+            count += 1 
+            c.innerHTML = count;
+            if (count == 5){
+                trofeuum.style.animationName = "trofeusurg"
+                trofeuum.style.opacity = "100%"
+                musga.volume = 0.5
+                musga.play()
+            }    
+            if (count == 25){
+                trofeudo.style.animationName = "trofeusurg2"
+                trofeudo.style.opacity = "100%"
+                musga.volume = 0.5
+                musga.play()   
+            }
+            if (count == 50){
+                trofeutre.style.animationName = "trofeusurg3"
+                trofeutre.style.opacity = "100%"
+                musga.volume = 0.5
+                musga.play()
+            }
+            if (count == 100){
+                trofeuqua.style.animationName = "trofeusurg4"
+                trofeuqua.style.opacity = "100%"
+                musga.volume = 0.5
+                musga.play()
+            }      
+        }  
+    </script>
+</body>
+</html> 

@@ -1,0 +1,30 @@
+body{
+    background-color:rgba(1, 89, 253, 0.863);
+}
+
+div#Noper{
+    margin-inline: 10px;
+}
+
+
+div#interface {
+    width: 600px;
+    height: 100px;
+    background-color: rgba(32, 235, 25, 0.918);
+    margin-block: 200px;
+    margin-inline: 28rem;
+    margin-top: auto;
+    justify-content: center;
+    align-item: center;
+    box-shadow: 7px 9px 9px rgb(3, 3, 3); 
+    padding: 10px 10px 60px;    
+}
+
+h1#nameG {
+    text-align: center;
+    color: yellow;
+}
+
+button#calculador {
+    background-color: yellow;
+}    

@@ -1,0 +1,120 @@
+*{
+    font-family: Bangers;
+}
+/* colocar que toda font fique com a Bangers! */
+body{
+    background-color: rgb(0,0,139);
+}
+/* definir cor de fundo da pagina */
+div#princp{
+    background: rgb(218,165,32);
+    padding-bottom: 450px;
+    margin-left: 350px;
+    margin-right: 350px;
+    box-shadow: 10px 10px 10px black
+}
+/* div principal onde fica todos outros elementos */
+div#princp button{
+    margin-left: 155px;
+    margin-top:250px;
+    height: 150px;
+    width: 350px;
+    background-color: rgb(204, 99, 0);
+    border-radius: 10px;
+    font-size: 50pt;
+    color:orange;    
+    position: absolute;
+    cursor: pointer;
+}
+/* css do botão que clica (avá) */
+div#quantidade{
+    background-color: rgb(204, 99, 0);
+    position: absolute;
+    margin-left: 630px;
+    margin-top: 180px;
+    width: 100px;
+    text-align: center;
+    border-radius: 50px;
+    box-shadow: 1px 1px 1px black;
+    color: orange;
+}
+/* onde fica a quantidade de clicagem! */
+div#trofeuint{
+    background-color: black;
+    margin-top: 100px;
+    position: absolute;
+    margin-left: 180px;
+    width: 300px;
+    height: 70px;
+    background-color: rgb(204, 99, 0);
+    border-radius: 40px;
+    box-shadow: 1px 1px 1px black;
+
+}
+/* serie de trofeu do 1 ate o 3 copiados */
+img#trofeu1{
+    width: 50px;
+    margin-left: 10px;
+    margin-top: 10px;
+    opacity: 30%;
+    animation-name:none;
+    animation-duration: 2s;   
+}
+img#trofeu2{
+    width: 50px;
+    margin-left: 10px;
+    margin-top: 10px;
+    opacity: 30%;
+    animation-name:none;
+    animation-duration: 2s;   
+}
+img#trofeu3{
+    width: 50px;
+    margin-left: 10px;
+    margin-top: 10px;
+    opacity: 30%;
+    animation-name:none;
+    animation-duration: 2s;
+}
+img#trofeu4{
+    width: 50px;
+    margin-left: 10px;
+    margin-top: 10px;
+    opacity: 30%;
+    animation-name:none;
+    animation-duration: 2s;
+}      
+@keyframes trofeusurg {
+    0%  {width: 55px;}
+    25% {width: 60px;}
+    50% {width: 65px;}
+    100% {opacity: 100%;}        
+}
+/* animação de aumentar o tamanho e normalizar a opacidade, novamente copiado para cada trofeu */
+@keyframes trofeusurg2 {
+    0%  {width: 55px;}
+    25% {width: 60px;}
+    50% {width: 65px;}
+    100% {opacity: 100%;}        
+}      
+@keyframes trofeusurg3 {
+    0%  {width: 55px;}
+    25% {width: 60px;}
+    50% {width: 65px;}
+    100% {opacity: 100%;}        
+}      
+@keyframes trofeusurg4 {
+    0%  {width: 55px;}
+    25% {width: 60px;}
+    50% {width: 65px;}
+    100% {opacity: 100%;}        
+}
+h1#titulo{
+    padding-top: 10px;
+    position: absolute;
+    padding-left: 560px;
+    color: rgb(204, 99, 0);
+    text-shadow: 1px 1px 1px black;
+    font-size: 30pt;
+}
+/* css do titulo principal    */   

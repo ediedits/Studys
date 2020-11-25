@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora | Facil e simples</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 id="nameG">TABUADA</h1>
+    <div id='interface'>
+        <input type="number" name="number1" id="nber1">
+        <input type="number" name="number2" id="nber2">
+        <input type="text" placeholder="Dgite aqui" id="Noper"><br/>
+        <button id="calculador" onclick="oper()">
+            Calcular 
+        </button>
+        <script>
+            function oper(){
+                var num1 = document.getElementById('nber1')
+                var num2 = document.getElementById('nber2')
+                var n1 = parseFloat(num1)
+                var n2 = parseFloat(num2)
+                var escolha = document.getElementById('Noper');
+                console.log(n1, n2)
+                var operacoes = {
+                    'somar': n1 + n2,
+                    'dividir': n1 / n2
+                };
+                return console.log(operacoes['somar'])  
+            } 
+        </script>
+    </div>
+</body>
+</html>
